@@ -17,7 +17,7 @@ const root = ReactDom.createRoot(rootElement);
 root.render(
   <>
   <TaskCard ready = {false}/>
-  <TaskCard ready = {true}/>
+  <TaskCard ready = {false}/>
     {/* <Button text = "Click Me"/>
     <Button text = "Buy"/>
     <Button text = "" name="Aaron"/> */}
