@@ -2,9 +2,9 @@ import React from "react";
 import ReactDom from "react-dom/client";
 import { Mostrar, UserCard } from "./Mostrar";
 import Product, { SubPorducts } from "./Product";
-import {Button} from "./Button"
-import {TaskCard} from './Task'
-import {Saludar} from './Saludar'
+import { Button } from "./Button";
+import { TaskCard } from "./Task";
+import { Saludar } from "./Saludar";
 
 const rootElement = document.getElementById("root");
 const root = ReactDom.createRoot(rootElement);
@@ -15,11 +15,23 @@ const root = ReactDom.createRoot(rootElement);
 //   return <h1>{married ? "Casado 😅" : "Soltero 😀"}</h1>;
 // }
 
+//Declarar una función para el evento. 
+const handleChange = (e) => {
+  console.log(e.target.value);
+}
+
+
 root.render(
   <>
-  <TaskCard ready = {false}/>
-  <TaskCard ready = {true}/>
-  <Saludar/>
+    <TaskCard ready={false} />
+    <Button text="Texto" />
+    <input
+      id="hola"
+      onChange={handleChange}
+    ></input>
+    <TaskCard ready={true} />
+    <Saludar />
+
     {/* <Button text = "Click Me"/>
     <Button text = "Buy"/>
     <Button text = "" name="Aaron"/> */}
