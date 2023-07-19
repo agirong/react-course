@@ -15,23 +15,28 @@ const root = ReactDom.createRoot(rootElement);
 //   return <h1>{married ? "Casado 😅" : "Soltero 😀"}</h1>;
 // }
 
-//Declarar una función para el evento. 
+//Declarar una función para el evento.
 const handleChange = (e) => {
   console.log(e.target.value);
-}
-
+};
 
 root.render(
   <>
     <TaskCard ready={false} />
     <Button text="Texto" />
-    <input
-      id="hola"
-      onChange={handleChange}
-    ></input>
+    <input id="hola" onChange={handleChange}></input>
     <TaskCard ready={true} />
     <Saludar />
 
+    <form
+      onSubmit={(e) => {
+        e.preventDefault()
+        alert("Enviando datos del form");
+      }}
+    >
+      <h1>Registro de Usuario</h1>
+      <button>Enviar</button>
+    </form>
     {/* <Button text = "Click Me"/>
     <Button text = "Buy"/>
     <Button text = "" name="Aaron"/> */}

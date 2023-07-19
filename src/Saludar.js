@@ -2,6 +2,6 @@ import {Component} from 'react'
 
 export class Saludar extends Component{
     render(){
-        return <h1>Hola Mundo!</h1>
+        return <h1>Componente Class Saludar!</h1>
     }
 }
