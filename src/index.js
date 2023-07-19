@@ -4,6 +4,7 @@ import { Mostrar, UserCard } from "./Mostrar";
 import Product, { SubPorducts } from "./Product";
 import {Button} from "./Button"
 import {TaskCard} from './Task'
+import {Saludar} from './Saludar'
 
 const rootElement = document.getElementById("root");
 const root = ReactDom.createRoot(rootElement);
@@ -17,7 +18,8 @@ const root = ReactDom.createRoot(rootElement);
 root.render(
   <>
   <TaskCard ready = {false}/>
-  <TaskCard ready = {false}/>
+  <TaskCard ready = {true}/>
+  <Saludar/>
     {/* <Button text = "Click Me"/>
     <Button text = "Buy"/>
     <Button text = "" name="Aaron"/> */}
