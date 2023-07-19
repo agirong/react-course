@@ -8,7 +8,7 @@ export function TaskCard({ ready }) {
   return (
     <div className="card">
       <h1>Prueba: Tarea</h1>
-      <h2 style={ready ? { background: "green" } : { background: "red" }}>
+      <h2 className={ready?'bg-green': 'bg-red'}>
         {ready ? "Realizada" : "Pendiente"}
       </h2>
     </div>

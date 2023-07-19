@@ -8,3 +8,11 @@
   font-family: Arial, sans-serif;
   margin: 20px;
 }
+
+.bg-red{
+  background: red;
+}
+
+.bg-green{
+  background: green;
+}
